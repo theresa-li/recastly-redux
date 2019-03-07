@@ -24,7 +24,7 @@ export default class App extends React.Component {
   }
 
   handleVideoListEntryTitleClick(video) {
-    this.setState({currentVideo: video});
+    this.setState({ currentVideo: video });
   }
 
   getYouTubeVideos(query) {
@@ -48,12 +48,12 @@ export default class App extends React.Component {
       <div>
         <nav className="navbar">
           <div className="col-md-6 col-md-offset-3">
-            <Search handleSearchInputChange={handleSearchInputChange}/>
+            <Search handleSearchInputChange={handleSearchInputChange} />
           </div>
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayer video={this.state.currentVideo}/>
+            <VideoPlayer video={this.state.currentVideo} />
           </div>
           <div className="col-md-5">
             <VideoList
